@@ -92,15 +92,8 @@ ramp-load-foreground = ${colors.terciary}
 type = internal/memory
 interval = 1
 
-format = <bar-used> <label>
-label = RAM %percentage_used:2%%
-
-bar-used-indicator = 
-bar-used-indicator-foreground = ${colors.terciary}
-bar-used-width = 1
-
-bar-used-fill = 
-bar-used-empty = 
+format = <label>
+label = %{F#4D6160}%{F-} RAM %percentage_used:2%%
 
 [module/wifi]
 type = internal/network
@@ -184,10 +177,10 @@ label-empty = %icon%
 label-empty-font = 3
 label-empty-padding = 2
 
-icon-0 = "web;"
-icon-1 = "terminal;"
+icon-0 = "web;"
+icon-1 = "terminal;"
 icon-2 = "code;"
-icon-3 = "media;"
+icon-3 = "media;"
 
 icon-default = 
 icon-font = 2
