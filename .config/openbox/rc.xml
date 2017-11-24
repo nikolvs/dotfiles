@@ -303,7 +303,7 @@
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
-		<name>Rofi</name>
+		    <name>Rofi</name>
       </startupnotify>
       <command>rofi -show drun</command>
     </action>
@@ -312,13 +312,13 @@
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
-		<name>Terminal</name>
+  		  <name>Terminal</name>
       </startupnotify>
       <command>terminator</command>
     </action>
   </keybind>
 
-  <!-- Keybindings for fn keys -->
+  <!-- Keybindings for media -->
   <keybind key="XF86AudioRaiseVolume">
    <action name="Execute">
      <command>amixer set Master 10%+</command>
@@ -330,9 +330,9 @@
    </action>
   </keybind>
   <keybind key="XF86AudioMute">
-   <action name="Execute">
-     <command>amixer set Master toggle</command>
-   </action>
+    <action name="Execute">
+      <command>amixer set Master toggle</command>
+    </action>
   </keybind>
 
   <!-- Keybindings for system actions -->
@@ -340,7 +340,7 @@
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
-		<name>Lock Screen</name>
+		    <name>Lock Screen</name>
       </startupnotify>
       <command>i3lock</command>
     </action>
