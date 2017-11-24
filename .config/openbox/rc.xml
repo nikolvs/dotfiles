@@ -299,7 +299,7 @@
   </keybind>
 
   <!-- Keybindings for running applications -->
-  <keybind key="C-space">
+  <keybind key="W-space">
     <action name="Execute">
       <startupnotify>
         <enabled>true</enabled>
@@ -315,6 +315,24 @@
   		  <name>Terminal</name>
       </startupnotify>
       <command>terminator</command>
+    </action>
+  </keybind>
+  <keybind key="W-f">
+    <action name="Execute">
+      <startupnotify>
+        <enabled>true</enabled>
+        <name>Files</name>
+      </startupnotify>
+      <command>pcmanfm</command>
+    </action>
+  </keybind>
+  <keybind key="W-b">
+    <action name="Execute">
+      <startupnotify>
+        <enabled>true</enabled>
+        <name>Browser</name>
+      </startupnotify>
+      <command>xdg-open http://about:blank</command>
     </action>
   </keybind>
 
