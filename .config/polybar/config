@@ -1,29 +1,32 @@
 [colors]
-background = #292522
-foreground = #D6A692
-primary = #EFD9B4
-secundary = #A39081
-terciary = #4D6160
+background = #0c0c0c
+foreground = #E3B4A4
+primary = #7F7C91
+secundary = #EFD9B4
 
 [bar/niko]
-; bottom = true
 width = 100%
-height = 25
+height = 20
 padding = 1
-module-margin = 1
+module-margin = 2
+
+separator = 
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-font-0 = "InconsolataGo Nerd Font Mono:style=Bold:pixelsize=10;1"
+font-0 = "InconsolataGo Nerd Font Mono:style=Bold:pixelsize=9;1"
 font-1 = "FontAwesome:pixelsize=8;1"
-font-2 = "FontAwesome:pixelsize=12;1"
-font-3 = "Wuncon Siji:style=Regular:pixelsize=8;1"
-font-4 = "fixed:pixelsize=10;1"
+font-2 = "Wuncon Siji:style=Regular:pixelsize=8;1"
 
 modules-left = workspaces
 modules-center = date
-modules-right = temperature memory cpu volume wifi battery
+modules-right = volume wifi battery
+
+tray-position = right
+tray-maxsize = 12
+tray-padding = 1
+tray-background = ${colors.background}
 
 enable-ipc = true
 
@@ -50,50 +53,17 @@ format-discharging = <ramp-capacity> <label-discharging>
 label-charging = %percentage%%
 label-discharging = %percentage%%
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
 
-ramp-capacity-font = 2
-ramp-capacity-foreground = ${colors.terciary}
+ramp-capacity-font = 3
+ramp-capacity-foreground = ${colors.primary}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-
-animation-charging-font = 2
-animation-charging-foreground = ${colors.terciary}
+animation-charging-0 = 
+animation-charging-font = 3
+animation-charging-foreground = ${colors.primary}
 animation-charging-framerate = 750
-
-[module/cpu]
-type = internal/cpu
-interval = 1
-
-format = <ramp-load> <label>
-
-label = CPU %percentage:2%%
-
-ramp-load-0 = ▁
-ramp-load-1 = ▂
-ramp-load-2 = ▃
-ramp-load-3 = ▄
-ramp-load-4 = ▅
-ramp-load-5 = ▆
-ramp-load-6 = ▇
-ramp-load-7 = █
-
-ramp-load-foreground = ${colors.terciary}
-
-[module/memory]
-type = internal/memory
-interval = 1
-
-format = <label>
-label = %{F#4D6160}%{F-} RAM %percentage_used:2%%
 
 [module/wifi]
 type = internal/network
@@ -106,34 +76,15 @@ format-disconnected = <label-disconnected> Wi-Fi Off
 label-connected = %ifname%
 
 label-disconnected = 
-label-disconnected-font = 4
-label-disconnected-foreground = ${colors.terciary}
+label-disconnected-font = 3
+label-disconnected-foreground = ${colors.primary}
 
 ramp-signal-0 = 
 ramp-signal-1 = 
 ramp-signal-2 = 
 
-ramp-signal-font = 4
-ramp-signal-foreground = ${colors.terciary}
-
-[module/temperature]
-type = internal/temperature
-interval = 1
-warn-temperature = 70
-
-format = <ramp> <label>
-format-warn = <ramp> <label-warn>
-
-label = %temperature:2%
-
-label-warn = %temperature:2%
-label-warn-foreground = #f44242
-
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
-
-ramp-foreground = ${colors.terciary}
+ramp-signal-font = 3
+ramp-signal-foreground = ${colors.primary}
 
 [module/volume]
 type = internal/volume
@@ -143,16 +94,13 @@ format-muted = <label-muted> Muted
 
 label-volume = %percentage:3%%
 
-label-muted = 
+label-muted = 
 label-muted-font = 3
-label-muted-foreground = ${colors.terciary}
+label-muted-foreground = ${colors.primary}
 
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-
+ramp-volume-0 = 
 ramp-volume-font = 3
-ramp-volume-foreground = ${colors.terciary}
+ramp-volume-foreground = ${colors.primary}
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -160,21 +108,21 @@ type = internal/xworkspaces
 format = <label-state>
 
 label-active = %icon%
-label-active-font = 3
+label-active-font = 2
 label-active-padding = 2
-label-active-foreground = ${colors.primary}
-label-active-background = #30FFFFFF
+label-active-foreground = ${colors.secundary}
+label-active-background = #507F7C91
 
 label-occupied = %icon%
-label-occupied-font = 3
+label-occupied-font = 2
 label-occupied-padding = 2
 
 label-urgent = %icon%
-label-urgent-font = 3
+label-urgent-font = 2
 label-urgent-padding = 2
 
 label-empty = %icon%
-label-empty-font = 3
+label-empty-font = 2
 label-empty-padding = 2
 
 icon-0 = "web;"
