@@ -6,6 +6,8 @@ FILES=(
 	.config/openbox/rc.xml
 	.config/openbox/autostart
 	.config/polybar/config
+	.config/rofi/config
+	.config/rofi/theme
 )
 
 for file in ${FILES[@]}
