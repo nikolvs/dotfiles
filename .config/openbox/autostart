@@ -3,4 +3,5 @@
 #
 
 nitrogen --restore &
+compton &
 polybar niko &

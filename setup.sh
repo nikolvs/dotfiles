@@ -8,6 +8,7 @@ FILES=(
 	.config/polybar/config
 	.config/rofi/config
 	.config/rofi/theme
+	.config/compton.conf
 )
 
 for file in ${FILES[@]}
