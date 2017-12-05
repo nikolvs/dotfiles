@@ -320,7 +320,7 @@
         <enabled>true</enabled>
 		    <name>Rofi</name>
       </startupnotify>
-      <command>rofi -theme ~/.config/rofi/theme -show drun</command>
+      <command>rofi -theme ~/.config/rofi/theme -modi drun -show drun</command>
     </action>
   </keybind>
   <keybind key="W-t">

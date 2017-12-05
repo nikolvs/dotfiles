@@ -6,7 +6,6 @@ FILES=(
 	.config/openbox/rc.xml
 	.config/openbox/autostart
 	.config/polybar/config
-	.config/rofi/config
 	.config/rofi/theme
 	.config/compton.conf
 )
