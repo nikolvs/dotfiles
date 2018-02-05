@@ -758,7 +758,7 @@
   <!-- code -->
   <application name="subl*">
     <desktop>3</desktop>
-    <miximized>true</miximized>
+    <maximized>true</maximized>
   </application>
 
   <!-- media -->
