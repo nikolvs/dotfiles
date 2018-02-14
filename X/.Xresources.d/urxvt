@@ -1,19 +1,64 @@
 !! Colors
-URxvt*depth: 32
-URxvt*background: [90]#000000
-URxvt*foreground: #EAEAEA
+urxvt*depth: 32
+urxvt*background: [95]#000000
+urxvt*foreground: #EAEAEA
+!black
+urxvt*color0:  #222827
+urxvt*color8:  #5D6F74
+!red
+urxvt*color1:  #D5A8E3
+urxvt*color9:  #CD749C
+!green
+urxvt*color2:  #9C75DD
+urxvt*color10: #63B0B0
+!yellow
+urxvt*color3:  #9898AE
+urxvt*color11: #C0C0DD
+!blue
+urxvt*color4:  #654A96
+urxvt*color12: #5786BC
+!magenta
+urxvt*color5:  #625566
+urxvt*color13: #3F3442
+!cyan
+urxvt*color6:  #A9D1DF
+urxvt*color14: #849DA2
+!white
+urxvt*color7:  #E6EBE5
+urxvt*color15: #D9D6CF
+
+!! Style
+urxvt*borderLess: true
+urxvt*borderColor: [95]#000000
+urxvt*internalBorder: 15px
 
 !! Font
-URxvt*font: xft:monospace:size=10
+urxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=12
 ! reduce distance between characters
-URxvt*letterSpace: -1
+urxvt*letterSpace: -1
 
 !! Scrollbar
 ! do not show scrollbar
-URxvt*scrollBar: false
+urxvt*scrollBar: false
 ! do not scroll with output
-URxvt*scrollTtyOutput: false
+urxvt*scrollTtyOutput: false
 ! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
-URxvt*scrollWithBuffer: true
+urxvt*scrollWithBuffer: true
 ! scroll back to the bottom on keypress
-URxvt*scrollTtyKeypress: true
+urxvt*scrollTtyKeypress: true
+
+!! Settings
+! disables Ctrl+Shift shortcut that enters ISO14755 mode
+urxvt*iso14755: False
+! number of lines to save in history
+urxvt*saveLines: 10000
+
+!! Extensions
+urxvt*perl-ext-common: default,matcher
+! use default browser to open urls
+urxvt*url-launcher: xdg-open
+! use mouse left-click to open urls
+urxvt.matcher.button: 1
+! enable copy/paste with Ctrl+Shift+C/V
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
