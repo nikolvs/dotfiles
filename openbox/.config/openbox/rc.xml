@@ -326,10 +326,10 @@
   <keybind key="W-t">
     <action name="Execute">
       <startupnotify>
-        <enabled>true</enabled>
-  		  <name>Terminal</name>
+   	<enabled>true</enabled>
+    	<name>Terminal</name>
       </startupnotify>
-      <command>terminator</command>
+      <command>urxvt</command>
     </action>
   </keybind>
   <keybind key="W-f">
