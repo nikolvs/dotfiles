@@ -25,6 +25,7 @@ modules-center = date
 modules-right = volume wifi battery
 
 tray-position = right
+tray-detached = false
 tray-maxsize = 12
 tray-padding = 1
 tray-background = ${colors.background}
