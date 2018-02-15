@@ -2,30 +2,23 @@
 urxvt*depth: 32
 urxvt*background: [95]#000000
 urxvt*foreground: #EAEAEA
-!black
-urxvt*color0:  #222827
-urxvt*color8:  #5D6F74
-!red
-urxvt*color1:  #D5A8E3
-urxvt*color9:  #CD749C
-!green
-urxvt*color2:  #9C75DD
-urxvt*color10: #63B0B0
-!yellow
-urxvt*color3:  #9898AE
-urxvt*color11: #C0C0DD
-!blue
-urxvt*color4:  #654A96
-urxvt*color12: #5786BC
-!magenta
-urxvt*color5:  #625566
-urxvt*color13: #3F3442
-!cyan
-urxvt*color6:  #A9D1DF
-urxvt*color14: #849DA2
-!white
-urxvt*color7:  #E6EBE5
-urxvt*color15: #D9D6CF
+! dkeg - vwbug theme from xcolors.net
+urxvt*color0: #261E26
+urxvt*color1: #312C38
+urxvt*color2: #4D353B
+urxvt*color3: #503B43
+urxvt*color4: #57403E
+urxvt*color5: #665453
+urxvt*color6: #6E5450
+urxvt*color7: #8E7266
+urxvt*color8: #906756
+urxvt*color9: #927E7E
+urxvt*color10: #AD6042
+urxvt*color11: #B48B6F
+urxvt*color12: #C4AB98
+urxvt*color13: #D9C9B6
+urxvt*color14: #E7DDD1
+urxvt*color15: #FAF7F2
 
 !! Style
 urxvt*borderLess: true
