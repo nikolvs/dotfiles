@@ -10,8 +10,7 @@ nnoremap <C-h> <C-w><C-h>
 nnoremap <C-l> <C-w><C-l>
 
 " Vimrc 
-nnoremap <leader>ev :e $MYVIMRC<cr>
-nnoremap <leader>vd :e ~/.vim/vimrc<cr>
+nnoremap <leader>ev :e ~/.vim/vimrc<cr>
 nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " NERDTree
