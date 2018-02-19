@@ -9,5 +9,5 @@ set hlsearch					" highlight matches
 " NERDTree
 let g:NERDTreeShowHidden=1			" show hidden files
 
-" FZF (Fuzzy File Finder)
+" FZF (Fuzzy Finder)
 let g:fzf_layout={ 'down': '~20%' }
