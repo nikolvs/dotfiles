@@ -15,3 +15,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<cr>
+
+" FZF (Fuzzy File Finder)
+nnoremap <C-p> :Files<cr>
