@@ -1,3 +1,7 @@
 # ignore tmux plugins but not the manager
 tmux/.tmux/plugins/*
-!tmux/.tmux/plugins/tpm
+!tmux/.tmux/plugins/tpm/
+
+# ignore vim plugins
+vim/.vim/autoload/plug.vim
+vim/.vim/plugged/
