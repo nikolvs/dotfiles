@@ -13,6 +13,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'tpope/vim-vinegar'
+Plug 'christoomey/vim-tmux-navigator'
 
 " Theme
 Plug 'dikiaap/minimalist'
