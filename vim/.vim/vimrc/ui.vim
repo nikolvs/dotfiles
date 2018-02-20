@@ -1,6 +1,6 @@
 " Colors
 syntax enable
-colorscheme desert
+colorscheme minimalist 
 set background=dark
 
 " Layout
