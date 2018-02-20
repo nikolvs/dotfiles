@@ -11,6 +11,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'airblade/vim-rooter'
 
 " Theme
 Plug 'dikiaap/minimalist'

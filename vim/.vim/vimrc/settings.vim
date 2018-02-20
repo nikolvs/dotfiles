@@ -11,3 +11,6 @@ let g:NERDTreeShowHidden=1			" show hidden files
 
 " FZF (Fuzzy Finder)
 let g:fzf_layout={ 'down': '~20%' }
+
+" Rooter
+let g:rooter_silent_chdir=1
