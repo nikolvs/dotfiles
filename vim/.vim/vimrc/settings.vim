@@ -11,6 +11,7 @@ let g:NERDTreeShowHidden=1			" show hidden files
 
 " FZF (Fuzzy Finder)
 let g:fzf_layout={ 'down': '~20%' }
+let $FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 
 " Rooter
 let g:rooter_silent_chdir=1
