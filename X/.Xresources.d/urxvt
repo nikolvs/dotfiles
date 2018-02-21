@@ -23,10 +23,11 @@ urxvt*.color15:      #dae0e0
 !! Style
 !urxvt*borderLess: true
 urxvt*borderColor: [95]#000000
-urxvt*internalBorder: 15px
+urxvt*internalBorder: 2px
+urxvt*externalBorder: 0
 
 !! Font
-urxvt*font: xft:Inconsolata Nerd Font Mono:style=Medium:size=12.5
+urxvt*font: xft:Inconsolata Nerd Font Mono:pixelsize=16
 ! reduce distance between characters
 urxvt*letterSpace: -1
 
