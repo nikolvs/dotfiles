@@ -1,11 +1,11 @@
 let mapleader = ","
 
 " Clear search
-nnoremap <leader><space> :let @/ = ""<cr>
+nnoremap <silent> <leader><space> :let @/ = ""<cr>
 
 " Buffers
-nnoremap <C-]> :bnext<cr>
-nnoremap <C-[> :bprev<cr>
+nnoremap <C-u> :bprev<cr>
+nnoremap <C-i> :bnext<cr>
 nnoremap <leader>q :bdel<cr>
 
 " Vimrc 
