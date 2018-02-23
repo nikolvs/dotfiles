@@ -9,6 +9,9 @@ set hlsearch					" highlight matches
 " Buffers
 set hidden					" switch buffer without saving
 
+" NERDTree
+let g:NERDTreeShowHidden=1
+
 " FZF (Fuzzy Finder)
 let g:fzf_layout={ 'down': '~20%' }
 let $FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'

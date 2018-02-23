@@ -7,6 +7,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
+" File explorer
+Plug 'scrooloose/nerdtree'
 " Insert/delete parens, quotes, brackets in pairs
 Plug 'jiangmiao/auto-pairs'
 " Fuzzy Finder
@@ -14,8 +16,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 " Automatically cd into project root
 Plug 'airblade/vim-rooter'
-" Enhance netrw
-Plug 'tpope/vim-vinegar'
 " Seamless navigation in tmux and vim
 Plug 'christoomey/vim-tmux-navigator'
 " Faster paste
