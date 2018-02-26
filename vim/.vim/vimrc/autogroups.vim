@@ -9,5 +9,5 @@ augroup NERDTree
 	" go up a dir using hyphen
 	autocmd FileType nerdtree nmap <buffer> - u
 	" delete buffer when hidden
-	autocmd FileType nerdtree setlocal bufhidden=delete
+	autocmd FileType nerdtree setlocal bufhidden=wipe
 augroup END
