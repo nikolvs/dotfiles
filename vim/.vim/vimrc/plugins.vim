@@ -11,6 +11,9 @@ call plug#begin('~/.vim/plugged')
 Plug 'scrooloose/nerdtree'
 " Insert/delete parens, quotes, brackets in pairs
 Plug 'jiangmiao/auto-pairs'
+Plug 'tpope/vim-surround'
+" Insert comments in code
+Plug 'tpope/vim-commentary'
 " Fuzzy Finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -18,12 +21,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 " Seamless navigation in tmux and vim
 Plug 'christoomey/vim-tmux-navigator'
-" Faster paste
-Plug 'enricobacis/paste.vim'
 " Theme
 Plug 'dikiaap/minimalist'
 " Status/tabline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+" Coding style
+Plug 'editorconfig/editorconfig-vim'
 
 call plug#end()
