@@ -11,6 +11,7 @@ set hidden					" switch buffer without saving
 
 " NERDTree
 let g:NERDTreeShowHidden=1
+let g:NERDTreeMinimalUI=1
 
 " FZF (Fuzzy Finder)
 let g:fzf_layout={ 'down': '~20%' }
