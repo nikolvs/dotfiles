@@ -26,7 +26,9 @@ Plug 'dikiaap/minimalist'
 " Status/tabline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-" Coding style
+" Config editor coding style
 Plug 'editorconfig/editorconfig-vim'
+" Code formatter
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 call plug#end()
