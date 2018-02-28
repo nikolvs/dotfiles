@@ -1,13 +1,22 @@
 let mapleader = ","
 
+" Movements
+nnoremap j gj
+nnoremap k gk
+
 " Clear search
 nnoremap <silent> <leader><space> :let @/ = ""<cr>
 
-" File explorer
-nnoremap - :edit .<cr>
+" Files
+nnoremap <silent> - :edit .<cr>
+" new empty buffer
+nnoremap <silent> <leader>ee :enew<cr>
+" open last closed buffer
+nnoremap <silent> <leader>ec :edit #<cr>
 
-" Open new empty buffer
-nnoremap <leader>ee :enew<cr>
+" Vimrc 
+nnoremap <leader>ev :edit ~/.vim/vimrc<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Copy/paste
 vnoremap y "+y
@@ -15,23 +24,22 @@ nnoremap <leader>p "+P
 inoremap <leader>p <C-o>"+P
 
 " Buffers
-nnoremap <C-u> :bprev<cr>
-nnoremap <C-i> :bnext<cr>
-nnoremap <leader>q :bdel<cr>
-nnoremap <leader>fq :bdel!<cr>
-
-" Vimrc 
-nnoremap <leader>ev :edit ~/.vim/vimrc<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <silent> <C-u> :bprev<cr>
+nnoremap <silent> <C-i> :bnext<cr>
+nnoremap <silent> <leader>q :bdel<cr>
+nnoremap <silent> <leader>Q :bdel!<cr>
 
 " NERDTree
-nnoremap <C-n> :NERDTreeToggle<cr>
+nnoremap <silent> <C-n> :NERDTreeToggle<cr>
 
 " FZF (Fuzzy Finder)
-nnoremap <C-p> :Files<cr>
-nnoremap <leader>. :Filetypes<cr>
+nnoremap <silent> <C-p> :Files<cr>
+nnoremap <silent> <leader>. :Filetypes<cr>
 
 " Commentary
 imap <C-_> <C-o><Plug>CommentaryLine
 nmap <C-_> <Plug>CommentaryLine
 vmap <C-_> <Plug>Commentary
+
+" Prettier
+nmap <leader>f <Plug>(Prettier)
