@@ -27,5 +27,4 @@ let g:airline#extensions#tabline#enabled=1
 let g:airline#extensions#tabline#formatter='unique_tail'
 
 " Prettier
-let g:prettier#exec_cmd_async=1
 let g:prettier#quickfix_enabled=0
