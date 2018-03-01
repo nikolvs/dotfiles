@@ -30,5 +30,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'editorconfig/editorconfig-vim'
 " Code formatter
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+" Syntax checking
+Plug 'vim-syntastic/syntastic'
 
 call plug#end()

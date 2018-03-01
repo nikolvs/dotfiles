@@ -28,3 +28,9 @@ let g:airline#extensions#tabline#formatter='unique_tail'
 
 " Prettier
 let g:prettier#quickfix_enabled=0
+
+" Syntastic
+let g:syntastic_always_populate_loc_list=1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_check_on_open=1
+let g:syntastic_check_on_wq=0
