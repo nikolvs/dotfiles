@@ -7,12 +7,16 @@ nnoremap k gk
 " Clear search
 nnoremap <silent> <leader><space> :let @/ = ""<cr>
 
-" Files
+" Open file explorer in current working dir
 nnoremap <silent> - :edit .<cr>
+
+" Buffers
 " new empty buffer
 nnoremap <silent> <leader>ee :enew<cr>
 " open last closed buffer
 nnoremap <silent> <leader>ec :edit #<cr>
+" reload buffer
+nnoremap <silent> <leader>r :checktime<cr>
 
 " Vimrc 
 nnoremap <leader>ev :edit ~/.vim/vimrc<cr>
