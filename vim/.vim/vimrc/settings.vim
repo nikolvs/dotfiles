@@ -1,13 +1,19 @@
-set nocompatible				" be iMproved, required
+set nocompatible				                " be iMproved, required
 set backspace=indent,eol,start	
-set noerrorbells visualbell t_vb=		" disable beep
+set noerrorbells visualbell t_vb=		        " disable beep
 
 " Search
-set incsearch					" search as characters are entered
-set hlsearch					" highlight matches
+set incsearch					                " search as characters are entered
+set hlsearch					                " highlight matches
 
 " Buffers
-set hidden					" switch buffer without saving
+set hidden					                    " switch buffer without saving
+
+" Tabs and spaces
+set expandtab					                " translate tabs to spaces
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 " Backup/Swap
 silent !mkdir -p ~/.vim/tmp
@@ -42,3 +48,11 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger='<tab>'
+let g:UltiSnipsJumpForwardTrigger='<c-b>'
+let g:UltiSnipsJumpBackwardTrigger='<c-z>'
+
+" Go
+let g:go_fmt_command='goimports'

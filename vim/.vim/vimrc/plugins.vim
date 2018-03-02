@@ -32,5 +32,10 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Syntax checking
 Plug 'vim-syntastic/syntastic'
+" Snippets
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+" Go language support
+Plug 'fatih/vim-go', { 'for': 'go' }
 
 call plug#end()
