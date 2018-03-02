@@ -9,6 +9,14 @@ set hlsearch					" highlight matches
 " Buffers
 set hidden					" switch buffer without saving
 
+" Backup/Swap
+silent !mkdir -p ~/.vim/tmp
+
+set backup
+set writebackup
+set backupdir=~/.vim/tmp,~/tmp,/tmp
+set directory=~/.vim/tmp,~/tmp,/tmp
+
 " NERDTree
 let g:NERDTreeShowHidden=1
 let g:NERDTreeMinimalUI=1

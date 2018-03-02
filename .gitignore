@@ -3,6 +3,7 @@ tmux/.tmux/plugins/*
 !tmux/.tmux/plugins/tpm/
 
 # vim
-vim/.vim/autoload/plug.vim
 vim/.vim/plugged/
+vim/.vim/tmp/
+vim/.vim/autoload/plug.vim
 vim/.vim/.netrwhist
