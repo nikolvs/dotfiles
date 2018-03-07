@@ -4,6 +4,9 @@ let mapleader = ","
 nnoremap j gj
 nnoremap k gk
 
+" Actions
+nnoremap cw ciw
+
 " Clear search
 nnoremap <silent> <leader><space> :let @/ = ""<cr>
 
@@ -25,7 +28,6 @@ nnoremap <leader>sv :source $MYVIMRC<cr>
 " Copy/paste
 vnoremap y "+y
 nnoremap <leader>p "+P
-inoremap <leader>p <C-o>"+P
 
 " Buffers
 nnoremap <silent> <C-u> :bprev<cr>
