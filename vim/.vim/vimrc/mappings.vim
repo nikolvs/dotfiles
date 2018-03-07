@@ -6,6 +6,7 @@ nnoremap k gk
 
 " Actions
 nnoremap cw ciw
+nnoremap vw viw
 
 " Clear search
 nnoremap <silent> <leader><space> :let @/ = ""<cr>
