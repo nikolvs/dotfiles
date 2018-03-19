@@ -69,7 +69,7 @@ animation-charging-framerate = 750
 
 [module/wifi]
 type = internal/network
-interface = wls3
+interface = wlp3s0
 interval = 1
 
 format-connected = <ramp-signal> <label-connected>
