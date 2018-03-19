@@ -32,6 +32,8 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Syntax checking
 Plug 'vim-syntastic/syntastic'
+" Syntax highlight
+Plug 'posva/vim-vue'
 " Snippets
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
