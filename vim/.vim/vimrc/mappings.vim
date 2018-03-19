@@ -43,6 +43,7 @@ nnoremap <silent> <C-n> :NERDTreeToggle<cr>
 
 " FZF (Fuzzy Finder)
 nnoremap <silent> <C-p> :Files<cr>
+nnoremap <silent> <C-b> :Buffers<cr>
 nnoremap <silent> <leader>. :Filetypes<cr>
 
 " Commentary
