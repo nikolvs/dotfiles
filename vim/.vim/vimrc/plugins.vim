@@ -39,5 +39,7 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " Go language support
 Plug 'fatih/vim-go', { 'for': 'go' }
+" Note taking
+Plug 'xolox/vim-notes' | Plug 'xolox/vim-misc'
 
 call plug#end()
