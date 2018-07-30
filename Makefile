@@ -1,19 +1,30 @@
 # Config
-TIMEZONE	?= America/Sao_Paulo
-KEYMAP		?= br abnt2
-LOCALE_LANG	?= en_US.UTF-8
+TIMEZONE			?= America/Sao_Paulo
+KEYMAP				?= br abnt2
+LOCALE_LANG			?= en_US.UTF-8
 
-SYS_SHELL	?= fish
-SYS_SHELL_STOW	?= fish/
+SYS_SHELL			?= fish
+SYS_SHELL_STOW		?= fish/
 
-SYS_TERM	?= rxvt-unicode-wcwidthcallback
-SYS_TERM_STOW	?= X/
+SYS_TERM			?= rxvt-unicode-wcwidthcallback
+SYS_TERM_STOW		?= X/
 
-SYS_FONTS	?= siji-git nerd-fonts-complete
+SYS_FONTS			?= siji-git nerd-fonts-complete
 
-REPOS_DIR	?= $(HOME)/Repositories
-DOTFILES_DIR	?= $(REPOS_DIR)/dotfiles
-DOTFILES_REPO	?= https://github.com/nikolvs/dotfiles.git
+OPENBOX_STOW		?= openbox/
+WM_COMPOSITOR		?= compton
+
+STATUS_BAR			?= polybar
+STATUS_BAR_STOW		?= polybar/
+
+APP_LAUNCHER		?= rofi
+APP_LAUNCHER_STOW	?= rofi/
+
+BROWSER				?= firefox
+
+REPOS_DIR			?= $(HOME)/Repositories
+DOTFILES_DIR		?= $(REPOS_DIR)/dotfiles
+DOTFILES_REPO		?= https://github.com/nikolvs/dotfiles.git
 
 # Helpers
 PACMAN = sudo pacman -Sy --noconfirm
@@ -28,7 +39,7 @@ define makepkg_build
 endef
 
 .PHONY: all
-all: base locale timezone fonts shell term
+all: base locale timezone fonts shell term openbox browser vim
 
 .PHONY: base install_pkgs install_pacaur
 base: install_pkgs install_pacaur $(DOTFILES_DIR)
@@ -61,6 +72,7 @@ timezone:
 shell:
 	@$(PACMAN) $(SYS_SHELL)
 	@chsh -s `which $(SYS_SHELL)`
+	@cd $(DOTFILES_DIR) && stow -t $(HOME) $(SYS_SHELL_STOW)
 
 .PHONY: term
 term:
@@ -70,3 +82,27 @@ term:
 .PHONY: fonts
 fonts:
 	@$(PACAUR) $(SYS_FONTS)
+
+.PHONY: openbox compositor bar launcher
+openbox: compositor bar launcher
+	@cd $(DOTFILES_DIR) && stow -t $(HOME) $(OPENBOX_STOW)
+
+compositor:
+	@$(PACMAN) $(WM_COMPOSITOR)
+
+bar:
+	@$(PACAUR) $(STATUS_BAR)
+	@cd $(DOTFILES_DIR) && stow -t $(HOME) $(STATUS_BAR_STOW)
+
+launcher:
+	@$(PACMAN) $(APP_LAUNCHER)
+	@cd $(DOTFILES_DIR) && stow -t $(HOME) $(APP_LAUNCHER_STOW)
+
+.PHONY: browser
+browser:
+	@$(PACMAN) $(BROWSER)
+
+.PHONY: vim
+vim:
+	@$(PACMAN) gvim
+	@cd $(DOTFILES_DIR) && stow -t $(HOME) vim/
