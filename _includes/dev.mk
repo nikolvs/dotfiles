@@ -13,6 +13,7 @@ shell:
 
 .PHONY: editor
 editor:
+	@sudo pacman -R --noconfirm vim
 	@$(PACMAN) gvim
 	@$(STOW) vim/
 
