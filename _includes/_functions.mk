@@ -1,5 +1,5 @@
 PACMAN 	= sudo pacman -Sy --noconfirm
-PACAUR 	= pacaur -Sy --noconfirm
+PACAUR 	= pacaur -Sy --noconfirm --noedit
 STOW 	= stow -t $(HOME)
 
 define makepkg_build
